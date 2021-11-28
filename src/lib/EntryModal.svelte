@@ -91,7 +91,7 @@
 							id="good"
 							autocomplete="off"
 							on:click={() => {
-								emoji = emojiList.bad;
+								emoji = emojiList.good;
 							}}
 						/>
 						<label class="btn btn-outline-info" for="good">Good</label>
@@ -103,7 +103,7 @@
 							id="best"
 							autocomplete="off"
 							on:click={() => {
-								emoji = emojiList.bad;
+								emoji = emojiList.best;
 							}}
 						/>
 						<label class="btn btn-outline-success" for="best">Best</label>
