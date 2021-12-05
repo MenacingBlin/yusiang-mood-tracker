@@ -1,6 +1,6 @@
 <script>
 	let emoji = '😐';
-	let emojiList = { worst: '😭', okay: '😐', bad: '🙁', good: '🙂', best: '😁' };
+	let emojiList = { worst: '😭', okay: '😐', bad: '🙀', good: '😺', best: '😁' };
 </script>
 
 <div class="modal fade" id="newEntry" tabindex="-1">
@@ -107,6 +107,11 @@
 							}}
 						/>
 						<label class="btn btn-outline-success" for="best">Best</label>
+					</div>
+					<!-- Comments -->
+					<div class="form-floating">
+						<textarea class="form-control" id="comment" />
+						<label for="commentTextarea"> Comments</label>
 					</div>
 				</div>
 			</div>
