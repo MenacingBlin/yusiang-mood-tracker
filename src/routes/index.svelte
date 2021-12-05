@@ -25,5 +25,23 @@
     </div>
 </section>
 
+<!-- Sign Out -->
+<section class="container px-4 py-3 text-center">
+    <button class="btn btn-secondary" on:click={signOut}>Logout</button>
+
+        function redirect() {
+   	 //login redirect
+   	 if ($session && $page.path === '/') {
+   		 goto('/welcome');
+   	 }
+
+   	 //logout redirect
+   	 if (!$session && $page.path === '/welcome') {
+   		 goto('/');
+   	 }
+    }
+
+</section>
+
 <EntryModal />
 
