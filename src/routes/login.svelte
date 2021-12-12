@@ -1,12 +1,14 @@
 <script>
     import supabase from '$lib/db';
     let email;
-
-    async function signOut() {
-   	 const { error } = await supabase.auth.signOut();
+	async function loginUser() {
+   	 const { error } = await supabase.auth.signIn({
+   		 email
+   	 });
 
    	 if (error) alert(error.message); // alert if error
     }
+
 </script>
 
 
